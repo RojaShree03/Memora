@@ -1,16 +1,70 @@
-# React + Vite
+# 🧠 MEMORA — Memory Number Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Remember what you see.
 
-Currently, two official plugins are available:
+MEMORA is a modern React-based memory game where players memorize randomly generated numbers, flip cards, find matching pairs, and progress through increasingly challenging levels.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The project was originally created as a **Random Number Generator — State & Conditional Rendering Project**, and was extended into a complete interactive memory game to demonstrate React concepts in a practical way.
 
-## React Compiler
+## 🌐 Live Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🚀 **Vercel:**  
+https://memora-sage-xi.vercel.app/
 
-## Expanding the ESLint configuration
+## 📂 GitHub Repository
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+💻 **Source Code:**  
+https://github.com/RojaShree03/Memora
+
+---
+
+## ✨ Features
+
+- 🎲 Randomly generated numbers
+- 🧠 Memorization phase
+- 🃏 Interactive memory cards
+- 🔎 Match identical numbers
+- ❤️ Lives system
+- 🔥 Combo system
+- 🏆 Score calculation
+- 🎯 Attempts tracking
+- ⏱️ Game timer
+- 📈 Progressive levels
+- 🎉 Level completion screen
+- 💀 Game-over state
+- 🌙 Dark mode
+- 📱 Responsive design
+- ✨ Smooth card-flip animations
+- 🔄 Restart and next-level functionality
+- 🚫 Prevents duplicate card selections
+- 🛡️ Prevents multiple life deductions for a single wrong attempt
+
+---
+
+## 🎯 React Concepts Demonstrated
+
+This project demonstrates several important React fundamentals.
+
+### `useState`
+
+State is used to manage:
+
+- Current level
+- Game phase
+- Generated cards
+- Flipped cards
+- Matched cards
+- Score
+- Lives
+- Attempts
+- Combo
+- Game timer
+- Memorization countdown
+- Dark mode
+
+Example:
+
+```jsx
+const [score, setScore] = useState(0);
+const [lives, setLives] = useState(3);
+const [level, setLevel] = useState(1);
